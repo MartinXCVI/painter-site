@@ -1,0 +1,9 @@
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+.hero-header {
+  width: 100%;
+  min-height: 100vh;
+}

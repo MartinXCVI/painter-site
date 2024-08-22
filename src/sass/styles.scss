@@ -1,0 +1,18 @@
+/*----- Global styling -----*/
+
+@use './global.scss';
+
+
+/*----- Includes -----*/
+
+@use './includes/colors';
+@use './includes/mixins';
+@use './includes/typography';
+@use './includes/variables';
+
+/*----- Components ------*/
+
+
+/*----- Views ------*/
+
+@use './views/index.scss';

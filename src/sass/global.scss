@@ -1,0 +1,31 @@
+@use './includes/colors' as color;
+@use './includes/typography' as font;
+@use './includes/mixins' as mx;
+@use './includes/variables' as var;
+
+* {
+ border: 0;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ outline: none;
+ font-family: font.$mainSans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+::selection {
+  background-color: color.$black;
+  color: color.$white;
+}
+
+h1, h2 {
+  font-family: font.$mainSerif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0.75rem;
+  font-size: font.$paraSize;
+}
