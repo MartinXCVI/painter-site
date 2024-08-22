@@ -6,4 +6,83 @@
 .hero-header {
   width: 100%;
   min-height: 100vh;
+  position: relative;
+  .bg-body-tertiary {
+    background-color: transparent !important;
+  }
+}
+
+.header-hero .nav-bar .container-fluid {
+  justify-content: var.$evenly !important;
+  padding: 0rem 3rem;
+}
+
+.hero-header::after {
+  @include mx.bgHeroImg(-5, '/images/index-hero.jpg', 0.8);
+}
+
+.hero-header::before {
+  @include mx.bgColor(-1, color.$black, 0.3);
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  color: color.$white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: color.$whiteSmoke;
+}
+
+.socials-div a {
+  color: color.$white;
+  text-shadow: 0 0 0.25rem color.$black;
+}
+
+.hero-section {
+  width: 100%;
+  min-height: 90vh;
+  @include mx.flexCol(center, center);
+}
+
+@media all and (max-width: 991px) {
+
+  .navbar-container {
+    justify-content: center !important;
+  }
+
+  .desktop-site-title {
+    display: none;
+  }
+
+  .mobile-site-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .socials-div {
+    display: none !important;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  .navbar-toggler{
+    margin-bottom: 1rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .mobile-site-title {
+    display: none;
+  }
 }

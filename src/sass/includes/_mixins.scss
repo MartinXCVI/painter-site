@@ -15,7 +15,7 @@
   inset: 0;
   position: absolute;
   z-index: $z;
-  background-image: url($bgColor);
+  background: $bgColor;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
