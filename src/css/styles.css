@@ -48,6 +48,31 @@ p {
 
 /*----- Includes -----*/
 /*----- Components ------*/
+.paint-card {
+  width: 30%;
+}
+
+@media all and (max-width: 480px) {
+  .paint-card {
+    width: 85%;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 767px) {
+  .paint-card {
+    width: 70%;
+  }
+}
+@media all and (max-width: 767px) {
+  #paintings-gallery {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .paint-card {
+    width: 45%;
+  }
+}
 /*----- Views ------*/
 .hero-header {
   width: 100%;
