@@ -46,6 +46,30 @@ p {
   font-size: 1rem;
 }
 
+.grey-text {
+  color: #606060;
+  transition: 0.3s linear all;
+}
+.grey-text:hover {
+  color: #151515;
+}
+
+@media all and (max-width: 991px) {
+  .mobile-title {
+    display: initial;
+  }
+  .desktop-title {
+    display: none;
+  }
+}
+@media all and (min-width: 992px) {
+  .mobile-title {
+    display: none;
+  }
+  .desktop-title {
+    display: initial;
+  }
+}
 /*----- Includes -----*/
 /*----- Components ------*/
 .paint-card {
@@ -136,6 +160,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.new-paint-section {
+  background-color: #efefef;
 }
 
 @media all and (max-width: 991px) {

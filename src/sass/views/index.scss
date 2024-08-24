@@ -48,6 +48,12 @@
   @include mx.flexCol(center, center);
 }
 
+.new-paint-section {
+  background-color: color.$softerGrey;
+}
+
+
+
 @media all and (max-width: 991px) {
 
   .navbar-container {

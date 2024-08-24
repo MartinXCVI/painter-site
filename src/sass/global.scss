@@ -50,3 +50,33 @@ p {
   margin-bottom: 0.75rem;
   font-size: font.$paraSize;
 }
+
+.grey-text {
+  color: color.$darkGrey;
+  transition: var.$trs-03;
+  &:hover {
+    color: color.$black;
+  }
+}
+
+@media all and (max-width: 991px) {
+  
+  .mobile-title {
+    display: initial;
+  }
+
+  .desktop-title {
+    display: none;
+  }
+}
+
+@media all and (min-width: 992px) {
+  
+  .mobile-title {
+    display: none;
+  }
+
+  .desktop-title {
+    display: initial;
+  }
+}
