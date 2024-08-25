@@ -97,6 +97,27 @@ p {
     width: 45%;
   }
 }
+.footer {
+  background-color: #202020;
+}
+
+.dev-signature {
+  color: #fefefe;
+}
+
+.dev-signature a {
+  transition: 0.3s linear all;
+}
+
+@media all and (max-width: 991px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .footer-container .socials-div {
+    margin-bottom: 1rem;
+  }
+}
 /*----- Views ------*/
 .hero-header {
   width: 100%;
@@ -180,6 +201,9 @@ p {
   }
   .socials-div {
     display: none !important;
+  }
+  .footer-container .socials-div {
+    display: flex !important;
   }
   .navbar-collapse {
     width: 100%;

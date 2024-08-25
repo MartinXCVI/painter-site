@@ -1,0 +1,28 @@
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+.footer {
+  background-color: color.$lightBlack;
+}
+
+.dev-signature {
+  color: color.$white;
+}
+
+.dev-signature a {
+  transition: var.$trs-03;
+}
+
+@media all and (max-width: 991px) {
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .footer-container .socials-div {
+    margin-bottom: 1rem;
+  }
+}
