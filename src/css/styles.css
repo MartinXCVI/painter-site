@@ -263,4 +263,8 @@ p {
   font-style: italic;
 }
 
+.contact-section {
+  min-height: 90vh;
+}
+
 /*# sourceMappingURL=styles.css.map */
