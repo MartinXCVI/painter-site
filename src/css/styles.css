@@ -37,6 +37,10 @@ h1, h2, h3, h1 a, h2 a, h3 a {
   font-family: "Kalnia", serif;
 }
 
+.bg-body-tertiary {
+  background-color: unset !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -118,6 +122,10 @@ p {
     margin-bottom: 1rem;
   }
 }
+.header-component {
+  background-color: #202020;
+}
+
 /*----- Views ------*/
 .hero-header {
   width: 100%;
@@ -219,6 +227,40 @@ p {
   .mobile-site-title {
     display: none;
   }
+}
+.about-quote-section {
+  min-height: 70vh;
+  position: relative;
+}
+.about-quote-section::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: #151515;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+.about-quote-section::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/about-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.about-quote {
+  color: #fefefe;
+  text-shadow: 0 0 0.2rem #151515;
+  line-height: 2.25rem;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=styles.css.map */

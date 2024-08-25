@@ -1,0 +1,24 @@
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+.about-quote-section {
+  min-height: 70vh;
+  position: relative;
+
+  &::before {
+    @include mx.bgColor(-1, color.$black, 0.5);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/about-hero.jpg', 0.8);
+  }
+}
+
+.about-quote {
+  color: color.$white;
+  text-shadow: 0 0 0.2rem color.$black;
+  line-height: 2.25rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}

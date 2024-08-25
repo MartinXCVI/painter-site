@@ -13,7 +13,9 @@
 /*----- Components ------*/
 @use './components/paint.scss';
 @use './components/footer.scss';
+@use './components/header.scss';
 
 /*----- Views ------*/
 
 @use './views/index.scss';
+@use './views/about.scss';

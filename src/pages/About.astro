@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import AboutIntro from './about/AboutIntro.astro'
+import AboutQuote from './about/AboutQuote.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About">
+  <Header>
+    <Navbar />
+  </Header>
+	<main>
+    <AboutIntro />
+    <AboutQuote />
+	</main>
+	<Footer />
+</Layout>
