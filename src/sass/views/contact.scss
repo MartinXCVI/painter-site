@@ -17,5 +17,74 @@
 .contact-wrapper {
   width: 45%;
   min-height: 100vh;
+  @include mx.flexCol(center, center);
   background-color: color.$whiteSmoke;
+}
+
+#message-input {
+  resize: none;
+}
+
+.contact-btns {
+  @include mx.flexRow(space-evenly, center);
+  padding-top: 0.5rem;
+
+  button {
+    width: 25%;
+    transition: 0.3s linear all;
+  }
+  .send-btn {
+    @include mx.btnStyle(color.$white, color.$black, black, 0.35rem);
+    &:hover {
+      @include mx.colorize(color.$black, color.$white);
+    }
+  }
+  .reset-btn {
+    @include mx.btnStyle(color.$black, color.$white, black, 0.35rem);
+    &:hover {
+      @include mx.colorize(color.$white, color.$black);
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+
+  .contact-btns {
+    @include mx.flexCol(space-evenly, center);
+    button {
+      width: 100%;
+      padding: 0.5rem;
+    }
+    .send-btn {
+      margin-bottom: 0.75rem;
+    }
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+  .contact-form {
+    width: 75%;
+  }
+
+  .contact-btns {
+    button {
+      width: 35%;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+  .contact-form {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  .contact-wrapper {
+    width: 100%;
+    padding: 2rem 1rem !important;
+  }
 }

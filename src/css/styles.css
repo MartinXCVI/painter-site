@@ -286,7 +286,81 @@ p {
 .contact-wrapper {
   width: 45%;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f6f6f6;
+}
+
+#message-input {
+  resize: none;
+}
+
+.contact-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+.contact-btns button {
+  width: 25%;
+  transition: 0.3s linear all;
+}
+.contact-btns .send-btn {
+  background-color: #fefefe;
+  color: #151515;
+  border: 1px solid;
+  border-radius: 0.35rem;
+}
+.contact-btns .send-btn:hover {
+  background-color: #151515;
+  color: #fefefe;
+}
+.contact-btns .reset-btn {
+  background-color: #151515;
+  color: #fefefe;
+  border: 1px solid;
+  border-radius: 0.35rem;
+}
+.contact-btns .reset-btn:hover {
+  background-color: #fefefe;
+  color: #151515;
+}
+
+@media all and (max-width: 480px) {
+  .contact-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .contact-btns button {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .contact-btns .send-btn {
+    margin-bottom: 0.75rem;
+  }
+}
+@media all and (min-width: 481px) and (max-width: 767px) {
+  .contact-form {
+    width: 75%;
+  }
+  .contact-btns button {
+    width: 35%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .contact-form {
+    width: 60%;
+  }
+}
+@media all and (max-width: 991px) {
+  .contact-wrapper {
+    width: 100%;
+    padding: 2rem 1rem !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
