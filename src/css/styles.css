@@ -264,7 +264,29 @@ p {
 }
 
 .contact-section {
+  width: 100%;
   min-height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.contact-section::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url("/images/contact-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.contact-wrapper {
+  width: 45%;
+  min-height: 100vh;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=styles.css.map */

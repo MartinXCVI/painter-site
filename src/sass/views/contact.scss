@@ -4,5 +4,18 @@
 @use '../includes/variables' as var;
 
 .contact-section {
+  width: 100%;
   min-height: 90vh;
+  @include mx.flexRow(flex-start, center);
+  position: relative;
+
+  &::after {
+    @include mx.bgHeroImg(-1, '/images/contact-hero.jpg', 0.9);
+  }
+}
+
+.contact-wrapper {
+  width: 45%;
+  min-height: 100vh;
+  background-color: color.$whiteSmoke;
 }

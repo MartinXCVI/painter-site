@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Navbar from '../components/Navbar.astro';
 import ContactSection from './contact/ContactSection.astro';
+import ContactForm from './contact/ContactForm.astro';
 import Footer from '../components/Footer.astro';
 ---
 
@@ -12,7 +13,9 @@ import Footer from '../components/Footer.astro';
     <Navbar />
   </Header>
 	<main>
-    <ContactSection />
+    <ContactSection>
+      <ContactForm />
+    </ContactSection>
 	</main>
 	<Footer />
 </Layout>
