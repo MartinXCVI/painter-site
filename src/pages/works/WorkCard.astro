@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  src: string;
+  price: number;
+}
+
+const { title, src, price } = Astro.props
+---
+
+<div class="work-card card m-3" style="width: 16rem;">
+  <img src={src} class="card-img-top" alt={title}>
+  <div class="card-body">
+    <p class="card-text text-center">{title}</p>
+    <p class="card-text text-center">$ {price}</p>
+  </div>
+</div>

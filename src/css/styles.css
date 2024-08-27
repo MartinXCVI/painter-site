@@ -263,6 +263,24 @@ p {
   font-style: italic;
 }
 
+#works-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.work-card {
+  background-color: #202020;
+  color: #f6f6f6;
+  transition: 0.3s linear all;
+  cursor: pointer;
+}
+.work-card:hover {
+  background-color: #f6f6f6;
+  color: #202020;
+}
+
 .contact-section {
   width: 100%;
   min-height: 90vh;

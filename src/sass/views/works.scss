@@ -1,0 +1,19 @@
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+#works-gallery {
+  @include mx.flexRow(space-evenly, center);
+  flex-wrap: wrap;
+}
+
+.work-card {
+  @include mx.colorize(color.$lightBlack, color.$whiteSmoke);
+  transition: var.$trs-03;
+  cursor: pointer;
+
+  &:hover {
+    @include mx.colorize(color.$whiteSmoke, color.$lightBlack);
+  }
+}
