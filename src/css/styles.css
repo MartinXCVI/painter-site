@@ -126,6 +126,11 @@ p {
   background-color: #202020;
 }
 
+.header-component .navbar .navbar-container .navbar-toggler {
+  background-color: #f6f6f6;
+  border: 1px solid #fefefe;
+}
+
 /*----- Views ------*/
 .hero-header {
   width: 100%;
