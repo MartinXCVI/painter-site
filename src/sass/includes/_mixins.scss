@@ -48,6 +48,6 @@
 @mixin btnStyle($bg, $color, $bdC, $bdR) {
   background-color: $bg;
   color: $color;
-  border: 1px solid;
+  border: 1px solid $bdC;
   border-radius: $bdR;
 }

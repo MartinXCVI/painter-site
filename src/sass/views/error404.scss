@@ -1,0 +1,37 @@
+@use '../includes/colors' as color;
+@use '../includes/mixins' as mx;
+@use '../includes/typography' as font;
+@use '../includes/variables' as var;
+
+.error-section {
+  min-height: 100vh;
+  position: relative;
+  color: color.$white;
+  text-shadow: 0 0 0.25rem color.$black;
+  @include mx.flexCol(center, center);
+  &::before {
+    @include mx.bgColor(-1, color.$lightBlack, 0.4);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/404-hero.jpg', 0.7);
+  }
+  .error-icon {
+    width: 10rem;
+  }
+  h1 {
+    font-size: 2.55rem;
+  }
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  a {
+    @include mx.btnStyle(transparent, color.$white, color.$white, 3rem);
+    padding: 0.5rem 1.5rem;
+    transition: var.$trs-03;
+    &:hover {
+      @include mx.btnStyle(color.$white, color.$softBlack, color.$white, 3rem);
+      text-shadow: 0 0 0;
+    }
+  }
+}
