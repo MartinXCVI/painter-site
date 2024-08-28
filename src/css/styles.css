@@ -400,13 +400,29 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #efefef;
+  position: relative;
+}
+.contact-wrapper::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: #efefef;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  transition: 0.3s linear all;
+}
+.contact-wrapper:hover::before {
+  opacity: 0.9;
 }
 
 .contact-form .form-label {
   font-family: "Kalnia", serif;
   font-size: 1.15rem;
   font-weight: 500;
+  text-shadow: 0 0 1rem #fefefe;
 }
 
 .contact-form .form-control:focus {
@@ -430,13 +446,13 @@ p {
   transition: 0.3s linear all;
 }
 .contact-btns .send-btn {
-  background-color: #fefefe;
+  background-color: transparent;
   color: #151515;
   border: 1px solid black;
   border-radius: 0.35rem;
 }
 .contact-btns .send-btn:hover {
-  background-color: #151515;
+  background-color: seagreen;
   color: #fefefe;
 }
 .contact-btns .reset-btn {
@@ -446,8 +462,8 @@ p {
   border-radius: 0.35rem;
 }
 .contact-btns .reset-btn:hover {
-  background-color: #fefefe;
-  color: #151515;
+  background-color: #b10023;
+  color: #f6f6f6;
 }
 
 @media all and (max-width: 480px) {

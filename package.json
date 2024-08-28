@@ -11,6 +11,7 @@
     "styles": "sass ./src/sass/styles.scss ./src/css/styles.css --watch"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "astro": "^4.14.2"
   }
 }

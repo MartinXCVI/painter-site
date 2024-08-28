@@ -20,13 +20,21 @@
   width: 45%;
   min-height: 100vh;
   @include mx.flexCol(center, center);
-  background-color: color.$softerGrey;
+  position: relative;
+  &::before {
+    @include mx.bgColor(-1, color.$softerGrey, 0.4);
+    transition: var.$trs-03;
+  }
+  &:hover::before {
+    opacity: 0.9;
+  }
 }
 
 .contact-form .form-label {
   font-family: font.$mainSerif;
   font-size: 1.15rem;
   font-weight: 500;
+  text-shadow: 0 0 1rem color.$white;
 }
 
 .contact-form .form-control {
@@ -50,15 +58,15 @@
     transition: 0.3s linear all;
   }
   .send-btn {
-    @include mx.btnStyle(color.$white, color.$black, black, 0.35rem);
+    @include mx.btnStyle(transparent, color.$black, black, 0.35rem);
     &:hover {
-      @include mx.colorize(color.$black, color.$white);
+      @include mx.colorize(seagreen, color.$white);
     }
   }
   .reset-btn {
     @include mx.btnStyle(color.$black, color.$white, black, 0.35rem);
     &:hover {
-      @include mx.colorize(color.$white, color.$black);
+      @include mx.colorize(color.$secondColor, color.$whiteSmoke);
     }
   }
 }
