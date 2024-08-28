@@ -9,7 +9,10 @@ const { title, src, price } = Astro.props
 ---
 
 <div class="work-card card m-3" style="width: 16rem;">
-  <img src={src} class="card-img-top" alt={title}>
+  <figure class="figure">
+    <img src={src} class="card-img-top" alt={title}>
+  </figure>
+  
   <div class="card-body">
     <p class="card-text text-center">{title}</p>
     <p class="card-text text-center">$ {price}</p>

@@ -13,6 +13,10 @@
 
 .dev-signature a {
   transition: var.$trs-03;
+  color: color.$firstColor;
+  &:hover {
+    color: color.$secondColor;
+  }
 }
 
 @media all and (max-width: 991px) {

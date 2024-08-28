@@ -12,8 +12,18 @@
   @include mx.colorize(color.$lightBlack, color.$whiteSmoke);
   transition: var.$trs-03;
   cursor: pointer;
+  figure {
+  overflow: hidden;
+    img {
+      transition: var.$trs-03;
+    }
+  }
 
   &:hover {
-    @include mx.colorize(color.$whiteSmoke, color.$lightBlack);
+    border: 1px solid color.$secondColor;
+    @include mx.colorize(color.$white, color.$secondColor);
+    img {
+    transform: scale(1.1);
+    }
   }
 }

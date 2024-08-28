@@ -40,6 +40,10 @@
 .socials-div a {
   color: color.$white;
   text-shadow: 0 0 0.25rem color.$black;
+  transition: var.$trs-03;
+  &:hover {
+    color: color.$firstColor;
+  }
 }
 
 .hero-section {
@@ -48,11 +52,31 @@
   @include mx.flexCol(center, center);
 }
 
+.subtitle-box {
+  @include mx.flexCol(center, center);
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.line-under {
+  width: 7.5rem;
+  border-top: 3px solid color.$firstColor;
+  margin-bottom: 2rem;
+  opacity: 1;
+}
+
 .new-paint-section {
   background-color: color.$softerGrey;
 }
 
-
+.paint-card figure img {
+  transition: var.$trs-03;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
 
 @media all and (max-width: 991px) {
 

@@ -22,3 +22,12 @@
   font-size: 1.2rem;
   font-style: italic;
 }
+
+.quote-btn {
+  @include mx.btnStyle(transparent, color.$white, color.$white, 0.25rem);
+  padding: 0.5rem 1.25rem;
+  transition: var.$trs-03;
+  &:hover {
+    @include mx.btnStyle(color.$white, color.$black, color.$white, 3rem);
+  }
+}

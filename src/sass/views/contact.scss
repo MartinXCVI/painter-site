@@ -8,9 +8,11 @@
   min-height: 90vh;
   @include mx.flexRow(flex-start, center);
   position: relative;
-
+  &::before {
+    @include mx.bgColor(-1, color.$black, 0.3);
+  }
   &::after {
-    @include mx.bgHeroImg(-1, '/images/contact-hero.jpg', 0.9);
+    @include mx.bgHeroImg(-5, '/images/contact-hero.jpg', 0.8);
   }
 }
 
@@ -18,7 +20,21 @@
   width: 45%;
   min-height: 100vh;
   @include mx.flexCol(center, center);
-  background-color: color.$whiteSmoke;
+  background-color: color.$softerGrey;
+}
+
+.contact-form .form-label {
+  font-family: font.$mainSerif;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.contact-form .form-control {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0;
+    border: 1px solid color.$softerBlack;
+  }
 }
 
 #message-input {

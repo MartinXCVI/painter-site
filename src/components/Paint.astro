@@ -9,7 +9,7 @@ const { image, title } = Astro.props
 
 <article class="paint-card">
   <figure class="figure">
-    <img src={image} class="figure-img img-fluid rounded" alt={title}>
+    <a href="/Works"><img src={image} class="figure-img img-fluid rounded" alt={title}></a>
     <figcaption class="figure-caption text-center">{title}</figcaption>
   </figure>
 </article>
