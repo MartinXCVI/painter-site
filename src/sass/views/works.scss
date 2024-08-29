@@ -6,6 +6,15 @@
 #works-gallery {
   @include mx.flexRow(space-evenly, center);
   flex-wrap: wrap;
+  position: relative;
+  &::before {
+    @include mx.bgColor(-1, color.$firstColor, 0.1);
+  }
+  &::after {
+    @include mx.bgHeroImg(-5, '/images/works-hero.jpg', 0.9);
+    background-position: top;
+    position: fixed;
+  }
 }
 
 .work-card {

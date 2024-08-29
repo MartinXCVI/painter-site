@@ -3,6 +3,17 @@
 @use '../includes/typography' as font;
 @use '../includes/variables' as var;
 
+.hero-header .navbar {
+  transition: var.$trs-03;
+  position: relative;
+  &::after {
+    @include mx.bgColor(-5, color.$black, 0.8);
+  }
+  &:hover {
+    background-color: color.$black !important;
+  }
+}
+
 .header-component {
   background-color: color.$lightBlack;
 }

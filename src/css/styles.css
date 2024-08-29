@@ -145,6 +145,25 @@ p {
     margin-bottom: 1rem;
   }
 }
+.hero-header .navbar {
+  transition: 0.3s linear all;
+  position: relative;
+}
+.hero-header .navbar::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background: #151515;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.hero-header .navbar:hover {
+  background-color: #151515 !important;
+}
+
 .header-component {
   background-color: #202020;
 }
@@ -309,6 +328,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  background-attachment: fixed;
 }
 
 .about-quote {
@@ -339,6 +359,31 @@ p {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+}
+#works-gallery::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: #d31239;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+#works-gallery::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background-image: url("/images/works-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  background-position: top;
+  position: fixed;
 }
 
 .work-card {

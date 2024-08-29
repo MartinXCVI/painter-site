@@ -12,6 +12,7 @@
   }
   &::after {
     @include mx.bgHeroImg(-5, '/images/about-hero.jpg', 0.8);
+    background-attachment: fixed;
   }
 }
 
